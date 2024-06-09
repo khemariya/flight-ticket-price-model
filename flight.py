@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 labelencoder = LabelEncoder()
 from sklearn.model_selection import  GridSearchCV
 from scipy.stats import mode
-df_train = pd.read_excel('Data_Train.xlsx')
+df_train = pd.read_excel('dataset/Data_Train.xlsx')
 
 pd.set_option('display.max_columns', None)  
 pd.set_option('display.max_rows', None) 
@@ -109,7 +109,7 @@ print(df_train.head())
 
 #Ed for test dataset
 
-test_data = pd.read_excel('Test_set.xlsx')
+test_data = pd.read_excel('dataset/Test_set.xlsx')
 print(test_data.head())
 
 print(test_data.isnull().sum())
